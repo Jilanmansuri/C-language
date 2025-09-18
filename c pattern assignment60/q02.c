@@ -4,10 +4,8 @@
 int m;
     scanf("%d",&m);
     for (int i = 1; i <= m; i++) {
-        printf("%d", i);
-        if (i < m) {
-            printf(" ");
-        }
+        printf("%d ", i);
+        
     }
     printf("\n");
     return 0;
