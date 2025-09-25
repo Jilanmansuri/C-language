@@ -1,21 +1,50 @@
+
 #include <stdio.h>
 int main()
 {
-
     int n;
     scanf("%d", &n);
-    for (int a = 0; a <= n; a++)
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= a; j++)
+        int count=65;
+        for (int j = 1; j <= n; j++)
         {
+            if(i<=j)
+            printf(" %c",count++);
+            else
             printf("  ");
         }
 
-        for (int k = 0; k <= n - a; k++)
-        {
-            printf("%c ", 'A' + k);
-        }
         printf("\n");
     }
     return 0;
 }
+
+
+
+
+
+
+
+
+// #include <stdio.h>
+// int main()
+// {
+
+//     int n;
+//     scanf("%d", &n);
+//     for (int a = 0; a <= n; a++)
+//     {
+//         for (int j = 1; j <= a; j++)
+//         {
+//             printf("  ");
+//         }
+
+//         for (int k = 0; k <= n - a; k++)
+//         {
+//             printf("%c ", 'A' + k);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
